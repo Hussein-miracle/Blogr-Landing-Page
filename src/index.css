@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .bgGrad-1{
+        background-image:linear-gradient(hsl(13, 100%, 72%),hsl(353, 100%, 62%))
+    }
+    .bgGrad-2{
+        background-image:linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%))
+    }
+}
