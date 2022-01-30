@@ -4,52 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="svg"  href="./images/bg-pattern-intro.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./style.css"/>
   <title>Blogr</title>
-    <script defer src="./index.js"></script>
+  <script defer src="./index.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 56%, 91%); }
   </style>
 </head>
-<body>
-  Product
+<body class="">
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+  <header class=" relative h-[80vh] w-[100%] lbg-1  py-8 px-2">
+    <div class="grid items-center">
+      <div class="header__logo  ">
+        <img src="./images/logo.svg" alt="company logo">
+      </div>
+      <ul class="flex justify-around items-center  text-whiteText">
+        <li>
+          <div class="text-whiteText">
+            <h4 class="text-whiteText">Product</h4>
+          </div>
+          
+          
+          <ul >
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+            
+          </ul>
+        </li>
+        <li>
+          Company
+          <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </li>
+        <li>
+          Connect
+          <ul>
+            <li> Contact</li>
+            <li> Newsletter</li>
+            <li> LinkedIn</li>
+          </ul>
+        </li>
+        
+      </ul>
+      <div>
+        <a href="#" >Login</a>
+        <a href="#" class=" text-ctaText bg-whiteText p-1.5 border-radius-8" >Sign Up</a>
+      </div>
+    </div>
 
-  Company
+    
 
-  About
-  Team
-  Blog
-  Careers
 
-  Connect
+    <div class="text-whiteText">
+      <h2> A modern publishing platform</h2>
+      <h3>Grow your audience and build your<span class="block sm:inline">  online brand</span> </h3>
 
-  Contact
-  Newsletter
-  LinkedIn
+    </div>
+
+    <a href="#" class="bg-whiteText text-ctaText p-1.5 ">Start for Free</a>
+    <a href="#">Learn More</a>
+
+    
   
-  Login
-  Sign Up
+  </header>
+  
+  
+  
 
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
+  <main class="h-[80vh] py-12">
+    <h3 class="font-bold m-2 ">Designed for the future</h3>
+    
 
   Introducing an extensible editor
   Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
@@ -73,31 +111,62 @@
   Powerful tooling
   Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
   capable of producing even the most complicated sites.
+  </main>
 
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
   
-  Contact
-  Newsletter
-  LinkedIn
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+
+  <footer class="footer flex flex-col  justify-between py-8 h-[50vh]">
+
+    <div class="flex justify-around">
+      <div class="footer__logo ">
+        <img src="./images/logo.svg" alt="footer logo">
+        
+      </div>
+      <ul>
+        <li>Product
+          <ul>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </li> 
+      </ul>
+  
+      <ul>
+        <li>
+          Company
+          <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Connect
+          <ul>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </li>
+      </ul>  
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Hussein-miracle">Abdullahi</a>.
+    </div>
+
+  </footer>
+
+
+  
 </body>
 </html>

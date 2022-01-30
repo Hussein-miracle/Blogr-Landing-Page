@@ -4,10 +4,27 @@
 
 
 @layer components {
-    .bgGrad-1{
-        background-image:linear-gradient(hsl(13, 100%, 72%),hsl(353, 100%, 62%))
+    header{
+        border-bottom-left-radius:1rem;
+        
     }
-    .bgGrad-2{
+    .lbg-1{
+        background: url("./images/bg-pattern-intro.svg"),linear-gradient(hsl(353, 100%, 62%),hsl(13, 100%, 72%));
+        background-position: 60% -90%;
+        /* background-size: 145%, 100%; */
+        background-size:cover;
+        background-repeat:no-repeat;
+
+        
+
+    }
+    .lbg-2{
         background-image:linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%))
+    }
+
+    .footer{
+        background-image:linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+
+        border-top-right-radius:4.5rem;
     }
 }
