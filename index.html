@@ -118,14 +118,14 @@
   
 
   <main class=" my-4 py-8">
-    <div class="flex  sm:flex-col">
+    <div class="flex  flex-col text-[1.2rem]">
       <h3 class="font-bold m-2 text-headings text-center py-1 ">Designed for the future</h3>
     
 
       <div class="flex justify-between items-center w-full h-[50vh] my-6 py-4">
         <div class="flex sm:flex-col items-center w-[50%] px-8">
           <div class="">
-            <h3>Introducing an extensible editor</h3>
+            <h3 class="font-bold ">Introducing an extensible editor</h3>
             <p>
               Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
               The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
@@ -134,8 +134,8 @@
             </p>
             
           </div>
-          <div class="">
-            <h3>Robust content management</h3>
+          <div >
+            <h3 class="font-bold">Robust content management</h3>
             <p>
               Flexible content management enables users to easily move through posts. Increase the usability of your blog 
               by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
@@ -153,16 +153,17 @@
     </div>
 
 
-    <div class="flex ">
+    <div class="flex  justify-around items-center bg-gradient-to-r from-sectionBg1 to-sectionBg2 rounded-tr-[5rem] rounded-bl-[5rem] h-[43vh]">
 
-      <div class="imgBg here">
+      <div class="flex-2 -mt-[4rem] bg-[url('./images/bg-pattern-circle.svg') ">
 
+        <img class="" src="./images/illustration-phones.svg" alt="laptop image">
       </div>
 
-      <div class="">
-        <h3 class="font-bold text-whiteText">State of the Art Infrastructure</h3>
+      <div class="flex-1  flex flex-col  p-6">
+        <h3 class="font-bold text-whiteText text-[1.5rem]">State of the Art Infrastructure</h3>
         
-        <p class="text-whiteText">
+        <p class="text-whiteText mt-16 text-[1.1rem]">
           With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
           This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
         </p>
@@ -171,22 +172,27 @@
     </div>
 
   
-    <div class=" w-[80%] block my-4 mx-4">
+    <div class=" w-[80%] block my-4 mx-4  flex justify-between items-center">
 
-      <div class="flex flex-col">
-        <div class="">
-          <h3>Free, open, simple</h3>
+      <div class="flex-1.5">
 
-          <p class="text-whiteText">
+        <img class="w-[35rem] h-full" src="./images/illustration-laptop-desktop.svg" alt="laptop image">
+
+      </div>
+      <div class="flex flex-col justify-between items-end flex-1">
+        <div class="flex flex-col">
+          <h3 class="font-bold text-[1.8rem]">Free, open, simple</h3>
+
+          <p class="text-headings text-[1.5rem]">
             Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
           </p>
         </div>
-        <div class="">
-          <h3>Powerful tooling</h3>
+        <div class="flex flex-col">
+          <h3  class="font-bold text-[1.8rem]">Powerful tooling</h3>
 
-          <p class="text-whiteText">
+          <p class="text-headings text-[1.5rem]">
             Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
   capable of producing even the most complicated sites.
           </p>
@@ -203,21 +209,21 @@
 
   
 
-  
+  <!-- footer done -->
 
   <footer class="footer flex flex-col  justify-between py-10 sm:py-8 w-full   sm:h-[50vh] block">
 
     <div class="flex flex-col sm:flex-row justify-around  items-center sm:items-start">
 
-      <div class="footer__logo ">
+      <div class="footer__logo mb-4">
         <img src="./images/logo.svg" alt="footer logo">
         
       </div>
 
-      <ul>
-        <li class="flex flex-col items-start">
-          <h3 class="text-whiteText ">Product</h3>
-          <ul class="text-footerText cursor-pointer flex flex-col  items-start">
+      <ul class="mb-2">
+        <li class="flex flex-col items-center sm:items-start">
+          <h3 class="text-whiteText  mb-1 sm:mb-2">Product</h3>
+          <ul class="text-footerText cursor-pointer flex flex-col  items-center sm:items-start text-[.85rem]">
             <li>Overview</li>
             <li>Pricing</li>
             <li>Marketplace</li>
@@ -227,10 +233,10 @@
         </li> 
       </ul>
   
-      <ul>
-        <li class="flex flex-col items-start">
-          <h3 class="text-whiteText">Company</h3>
-          <ul class="text-footerText cursor-pointer flex flex-col items-start">
+      <ul class="mb-2">
+        <li class="flex flex-col items-center sm:items-start">
+          <h3 class="text-whiteText  mb-1 sm:mb-2">Company</h3>
+          <ul class="text-footerText cursor-pointer flex flex-col items-center sm:items-start text-[.85rem]">
             <li>About</li>
             <li>Team</li>
             <li>Blog</li>
@@ -239,11 +245,11 @@
         </li>
       </ul>
 
-      <ul>
-        <li class="flex flex-col items-start">
+      <ul class="mb-2">
+        <li class="flex flex-col items-center sm:items-start">
           
-          <h3 class="text-whiteText ">Connect</h3>
-          <ul class="text-footerText cursor-pointer flex flex-col items-start">
+          <h3 class="text-whiteText mb-1 sm:mb-2">Connect</h3>
+          <ul class="text-footerText cursor-pointer flex flex-col items-center sm:items-start text-[.85rem]">
             <li>Contact</li>
             <li>Newsletter</li>
             <li>LinkedIn</li>
@@ -253,7 +259,7 @@
 
     </div>
 
-    <div class="attribution">
+    <div class="attribution mt-4">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/Hussein-miracle">Abdullahi</a>.
     </div>
