@@ -8,6 +8,9 @@
         border-bottom-left-radius:1rem;
         
     }
+    h3{
+        color:hsl(208, 49%, 24%);
+    }
     .lbg-1{
         background: url("./images/bg-pattern-intro.svg"),linear-gradient(hsl(353, 100%, 62%),hsl(13, 100%, 72%));
         background-position: 60% -90%;
@@ -20,6 +23,14 @@
     }
     .lbg-2{
         background-image:linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%))
+    }
+
+    .imgBg-1{
+        background-image:url("./images/bg-pattern-circle.svg");
+        background-size:cover;
+        background-position:100%;
+
+        
     }
 
     .footer{
