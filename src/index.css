@@ -23,16 +23,10 @@
         background-image:linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%))
     }
 
-    .imgBg-1{
-        background-image:url("./images/bg-pattern-circle.svg");
-        background-size:cover;
-        background-position:100%;
-
-        
-    }
+    
 
     .footer{
-        background-image:linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+        
 
         border-top-right-radius:4.5rem;
     }

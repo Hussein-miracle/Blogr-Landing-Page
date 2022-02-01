@@ -18,12 +18,12 @@
     .attribution a { color: hsl(228, 56%, 91%); }
   </style>
 </head>
-<body class="">
+<body class="overflow-x-hidden">
 
-  <header class="relative h-[80vh] w-[100%] lbg-1  py-0 px-14 pt-8 rounded-bl-[5.5rem]   flex flex-col  mb-8">
+  <header class="relative h-[70vh] w-[100%] lbg-1  py-0 px-14 pt-8 rounded-bl-[5.5rem]   flex flex-col  mb-8">
 
 
-    <div class="flex flex-col mi:flex-row justify-between mi:justify-around  justify-self-start md:justify-around" >
+    <div class="flex flex-col mi:flex-row  mi:justify-around  justify-self-start md:justify-around" >
  
       <div class="flex items-center  ">
         <div class="header__logo mi:mr-16  -ml-4 mr-auto">
@@ -102,14 +102,14 @@
         
       </div>
 
-      <div class=" hidden mi:flex mi:items-center font-bold">
+      <div class=" hidden mi:flex mi:items-center font-bold mi:justify-center">
         <a href="#" class="mr-2 text-whiteText " >Login</a>
         <a href="#" class=" text-ctaText bg-whiteText py-[6px] px-[8px]  rounded-[16px] ml-4 hover:bg-ctaHoverBg hover:text-whiteText " >Sign Up</a>
       </div>
 
-      <div class=" absolute top-[5rem] left-[50%] -translate-x-[50%] bg-whiteText text-headings text-center w-[85%] h-[90%] rounded-[6px] z-10 flex flex-col items-center mi:hidden" id="mobile-menu__content ">
+      <div class=" hidden absolute top-[5rem] left-[50%] -translate-x-[50%] bg-whiteText text-headings text-center w-[85%] h-[90%] rounded-[6px] z-10 flex flex-col items-center mi:hidden" id="mobile-menu__content ">
 
-        
+         
         <ul class="text-whiteText w-full cursor-pointer flex flex-col items-center" id="mob-product__links--btn-container">
           <li  class="w-full   flex flex-col items-center" >
             <div class="text-whiteText flex items-center justify-center header__links--btn " >
@@ -197,11 +197,11 @@
     <div class="flex flex-col justify-between  mt-24">
       <div class="text-whiteText text-center">
         <h1 class="font-bold mi:text-[2.4rem] "> A modern publishing platform</h1>
-        <h2   class="opacity-[0.8] sm:mt-4">Grow your audience and build your<span class="block sm:inline">  online brand</span> </h2>
+        <h2   class="opacity-[0.8] sm:mt-4 md:text-[1.4rem]">Grow your audience and build your<span class="block sm:inline">  online brand</span> </h2>
   
       </div>
 
-      <div class="text-center text-[11px] flex items-center justify-around w-full  mt-4 my-2  sm:mt-12 font-bold">
+      <div class="text-center text-[11px] flex items-center justify-center w-full  mt-4 my-2  sm:mt-12 font-bold">
 
         <a href="#" class=" bg-whiteText text-ctaText   text-center rounded-[14px] sm:mr-4 sm:py-[8px] sm:px-[12px] hover:bg-ctaHoverBg hover:text-whiteText  py-[1px] px-[2px] inline-block">Start for Free</a>
 
@@ -220,16 +220,17 @@
   
   
 
-  <main class=" my-4 py-8">
+  <main class=" my-2 py-8 ">
     <div class="flex  flex-col text-[1.2rem]">
-      <h3 class="font-bold m-2 text-headings text-center py-1 ">Designed for the future</h3>
+
+      <h3 class="font-bold m-2 text-[1.6rem] text-headings text-center py-1 ">Designed for the future</h3>
     
 
-      <div class="flex justify-between items-center w-full h-[50vh] my-6 py-4">
-        <div class="flex sm:flex-col items-center w-[50%] px-8">
-          <div class="">
+      <div class="flex justify-between items-center w-full  my-6 pl-24">
+        <div class="flex sm:flex-col items-center justify-between w-[45%] px-4 pl-8">
+          <div class="mb-8">
             <h3 class="font-bold ">Introducing an extensible editor</h3>
-            <p>
+            <p class="text-headings">
               Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
               The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
               videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
@@ -239,15 +240,16 @@
           </div>
           <div >
             <h3 class="font-bold">Robust content management</h3>
-            <p>
+            <p class="text-headings">
               Flexible content management enables users to easily move through posts. Increase the usability of your blog 
               by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
             </p>
             
           </div>
         </div>
-        <div class="imgBg-1 relative w-[45vw] h-[35vh]">          
-          <img class="w-full h-full" src="./images/illustration-editor-desktop.svg" alt="">
+
+        <div class=" bg-[url('./images/bg-pattern-circle.svg')] relative w-[45rem] h-[35rem]  md:-mr-[35%] flex-1">          
+          <img class="w-full h-full object-contain" src="./images/illustration-editor-desktop.svg" alt="">
         </div>
       </div>
   
@@ -256,17 +258,19 @@
     </div>
 
 
-    <div class="flex  justify-around items-center bg-gradient-to-r from-sectionBg1 to-sectionBg2 rounded-tr-[5rem] rounded-bl-[5rem] h-[43vh]">
+    <div class="flex bg-gradient-to-br from-sectionBg2 to-sectionBg1   bg-[url('./images/bg-pattern-circles.svg')]	
+    bg-contain bg-no-repeat  justify-around items-center rounded-tr-[5rem] rounded-bl-[5rem] h-[26rem] w-full   ">
 
-      <div class="flex-2 -mt-[4rem] bg-[url('./images/bg-pattern-circle.svg') ">
+      <div class=" mt-[2rem] h-[36rem]  ">
 
-        <img class="" src="./images/illustration-phones.svg" alt="laptop image">
+        <img class="object-contain ml-12 w-full h-full" src="./images/illustration-phones.svg" alt="phone image">
+
       </div>
 
-      <div class="flex-1  flex flex-col  p-6">
-        <h3 class="font-bold text-whiteText text-[1.5rem]">State of the Art Infrastructure</h3>
+      <div class="w-[50%]  flex flex-col  p-6">
+        <h3 class="font-bold text-whiteText text-[1.2rem]">State of the Art Infrastructure</h3>
         
-        <p class="text-whiteText mt-16 text-[1.1rem]">
+        <p class="text-whiteText mt-16 text-[1rem]">
           With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
           This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
         </p>
@@ -275,28 +279,27 @@
     </div>
 
   
-    <div class=" w-[80%] block my-4 mx-4  flex justify-between items-center">
+    <div class=" w-[100%] block my-4 mx-2  flex justify-between items-center ">
 
-      <div class="flex-1.5">
+      <div class="  w-[45rem] h-[35rem] -ml-[32%] flex-1">
 
-        <img class="w-[35rem] h-full" src="./images/illustration-laptop-desktop.svg" alt="laptop image">
+        <img class="w-full object-contain h-full" src="./images/illustration-laptop-desktop.svg" alt="laptop image">
 
       </div>
-      <div class="flex flex-col justify-between items-end flex-1">
-        <div class="flex flex-col">
-          <h3 class="font-bold text-[1.8rem]">Free, open, simple</h3>
+      <div class=" -ml-12 flex flex-col justify-between items-end w-[50%]  pr-[12rem]">
+        <div class="flex flex-col mb-8">
+          <h3 class="font-bold text-[1.4rem]">Free, open, simple</h3>
 
-          <p class="text-headings text-[1.5rem]">
+          <p class="text-headings text-[1.1rem]">
             Blogr is a free and open source application backed by a large community of helpful developers.It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
             and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
           </p>
         </div>
         <div class="flex flex-col">
-          <h3  class="font-bold text-[1.8rem]">Powerful tooling</h3>
+          <h3  class="font-bold text-[1.4rem]">Powerful tooling</h3>
 
-          <p class="text-headings text-[1.5rem]">
-            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+          <p class="text-headings text-[1.1rem]">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
           </p>
         </div>
       </div>
@@ -313,7 +316,7 @@
 
   <!-- footer done -->
 
-  <footer class="footer flex flex-col  justify-between py-10 sm:py-8 w-full   sm:h-[50vh] block">
+  <footer class="footer flex flex-col bg-footerBg  justify-between py-12 sm:h-[60vh] sm:py-8 w-full    block">
 
     <div class="flex flex-col sm:flex-row justify-around  items-center sm:items-start">
 
