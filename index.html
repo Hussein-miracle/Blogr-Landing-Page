@@ -20,29 +20,42 @@
 </head>
 <body class="">
 
-  <header class=" h-[80vh] w-[100%] lbg-1  py-0 px-2">
-    <div class="flex md:flex-row items-center justify-around">
+  <header class="relative h-[80vh] w-[100%] lbg-1  py-0 px-14 pt-8 rounded-bl-[5.5rem]   flex flex-col  mb-8">
+
+
+    <div class="flex flex-col mi:flex-row justify-between mi:justify-around  justify-self-start md:justify-around" >
  
-      <div class="flex justify-center">
-        <div class="header__logo  ">
+      <div class="flex items-center  ">
+        <div class="header__logo mi:mr-16  -ml-4 mr-auto">
           <img src="./images/logo.svg" alt="company logo">
         </div>
 
-        <div class="flex justify-between">
-          <ul class="text-whiteText">
-            <li>
-              <div class="text-whiteText flex items-center">
-                <h3 class="text-whiteText mr-1">Product</h3>
-                <img  src="./images/icon-arrow-light.svg" alt="arrow">
+        <div class="ml-24  mi:hidden" id="mobile-menu">
+
+          <div class=" hidden  mi:hidden  -mr-12 sm:-mr-[0px]" id="menu-close__btn">
+            <img src="./images/icon-close.svg" alt="icon-close">
+          </div>
+
+          <div id="menu-open__btn" class=" mi:hidden  -mr-12 sm:-mr-[0px]">
+            <img  src="./images/icon-hamburger.svg" alt="icon-hamburger">
+          </div>
+        </div>
+        
+        <div class="  hidden mi:flex mi:justify-between ">
+          <ul class="text-whiteText mr-8 cursor-pointer " id="product__links--btn-container">
+            <li   >
+              <div class="text-whiteText flex items-center justify-center header__links--btn " >
+                <h3 id="product__links--btn" class="text-whiteText mr-1 hover:underline " >Product</h3>
+                <img id="product__links--icon" src="./images/icon-arrow-light.svg" alt="arrow">
               </div>
               
               
-              <ul class="hidden" >
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
+              <ul class="header__links cursor-pointer bg-whiteText absolute  text-sectionBg1 py-1 px-2 rounded-[4px] w-[7.5rem] mt-2 -ml-4 hidden  shadow-md" id="product__links" >
+                <li class="hover:font-bold" >Overview</li>
+                <li class="hover:font-bold" >Pricing</li>
+                <li class="hover:font-bold" >Marketplace</li>
+                <li class="hover:font-bold" >Features</li>
+                <li class="hover:font-bold" >Integrations</li>
                 
               </ul>
             </li>
@@ -50,64 +63,154 @@
           </ul>
          
     
-          <ul>
+          <ul class="text-whiteText mr-8 cursor-pointer" id="company__links--btn-container">
             <li>
-              <div class="text-whiteText flex items-center">
-                <h3 class="text-whiteText mr-1">Company</h3>
-                <img  src="./images/icon-arrow-light.svg" alt="arrow">
+              <div class="header__links--btn text-whiteText flex items-center"  >
+                <h3 class="text-whiteText mr-1 hover:underline" id="company__links--btn">Company</h3>
+                <img id="company__links--icon"  src="./images/icon-arrow-light.svg" alt="arrow">
               </div>
               
-              <ul class="hidden" >
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
+              <ul class="header__links cursor-pointer bg-whiteText absolute  text-sectionBg1 py-1 px-2 rounded-[4px] w-[7.5rem] mt-2 -ml-4 hidden" id="company__links">
+                <li class="hover:font-bold" >About</li>
+                <li class="hover:font-bold" >Team</li>
+                <li class="hover:font-bold" >Blog</li>
+                <li class="hover:font-bold" >Careers</li>
               </ul>
     
             </li>
           </ul> 
     
     
-          <ul>   
+          <ul class="text-whiteText mr-8 cursor-pointer relative flex flex-col" id="connect__links--btn-container">   
             <li>
-            <div class="text-whiteText flex items-center">
-              <h3 class="text-whiteText mr-1">Connect</h3>
-              <img  src="./images/icon-arrow-light.svg" alt="arrow">
+            <div class="header__links--btn text-whiteText flex items-center">
+              <h3 class="text-whiteText mr-1 hover:underline" id="connect__links--btn">Connect</h3>
+              <img id="connect__links--icon"  src="./images/icon-arrow-light.svg" alt="arrow">
             </div>
             
             
-            <ul class="hidden" >
-              <li> Contact</li>
-              <li> Newsletter</li>
-              <li> LinkedIn</li>
+            <ul class="header__links cursor-pointer bg-whiteText absolute  text-sectionBg1 py-1 px-2 rounded-[4px] w-[7.5rem]  self-center  mt-2 -ml-4 hidden" id="connect__links" >
+              <li class="hover:font-bold"> Contact</li>
+              <li  class="hover:font-bold"  > Newsletter</li>
+              <li  class="hover:font-bold" > LinkedIn</li>
             </ul>
             </li>
           
           </ul>
         </div>
         
+        
       </div>
 
-
-      <div class="">
-        <a href="#" >Login</a>
-        <a href="#" class=" text-ctaText bg-whiteText p-1.5 border-radius-8" >Sign Up</a>
+      <div class=" hidden mi:flex mi:items-center font-bold">
+        <a href="#" class="mr-2 text-whiteText " >Login</a>
+        <a href="#" class=" text-ctaText bg-whiteText py-[6px] px-[8px]  rounded-[16px] ml-4 hover:bg-ctaHoverBg hover:text-whiteText " >Sign Up</a>
       </div>
+
+      <div class=" absolute top-[5rem] left-[50%] -translate-x-[50%] bg-whiteText text-headings text-center w-[85%] h-[90%] rounded-[6px] z-10 flex flex-col items-center mi:hidden" id="mobile-menu__content ">
+
+        
+        <ul class="text-whiteText w-full cursor-pointer flex flex-col items-center" id="mob-product__links--btn-container">
+          <li  class="w-full   flex flex-col items-center" >
+            <div class="text-whiteText flex items-center justify-center header__links--btn " >
+              <h3 id="mob-product__links--btn" class="text-headings font-bold hover:underline " >Product</h3>
+              <svg class="link__icon ml-2 mt-1" id="mob-product__links--icon"  xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            </div>
+            
+            
+            <ul class="hidden  header__links cursor-pointer text-headings bg-footerText py-2 px-4 rounded-[4px] w-[90%] mt-1   shadow-md" id="mob-product__links" >
+              <li class="hover:font-bold" >Overview</li>
+              <li class="hover:font-bold" >Pricing</li>
+              <li class="hover:font-bold" >Marketplace</li>
+              <li class="hover:font-bold" >Features</li>
+              <li class="hover:font-bold" >Integrations</li>
+              
+            </ul>
+          </li>
+          
+        </ul>
+       
+  
+        <ul class="text-whiteText w-full cursor-pointer flex flex-col items-center" id="mob-company__links--btn-container">
+          <li class="w-full   flex flex-col items-center" >
+            <div class="header__links--btn text-whiteText flex items-center justify-center "  >
+              <h3 class="text-headings font-bold hover:underline" id="mob-company__links--btn">Company</h3>
+              <svg class="link__icon ml-2 mt-1" id="mob-company__links--icon"  xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            </div>
+            
+            <ul class=" hidden header__links cursor-pointer text-headings bg-footerText py-2 px-4 rounded-[4px] w-[90%] mt-1 " id="mob-company__links">
+              <li class="hover:font-bold" >About</li>
+              <li class="hover:font-bold" >Team</li>
+              <li class="hover:font-bold" >Blog</li>
+              <li class="hover:font-bold" >Careers</li>
+            </ul>
+  
+          </li>
+        </ul> 
+  
+  
+        <ul class="text-whiteText w-full cursor-pointer flex flex-col items-center w-full" id="mob-connect__links--btn-container">   
+          <li class="w-full   flex flex-col items-center" >
+          <div class="header__links--btn text-whiteText flex  items-center ">
+            <h3 class="text-headings font-bold hover:underline" id="mob-connect__links--btn">Connect</h3>
+
+
+              <svg class="link__icon ml-2 mt-1" id="mob-connect__links--icon"  xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            
+            
+              
+          </div>
+          
+          
+          <ul class="cursor-pointer text-headings bg-footerText   py-1 px-2 rounded-[4px]   w-[90%] mt-2 flex flex-col justify-around  " id="mob-connect__links" >
+            <li class="hover:font-bold"> Contact</li>
+            <li  class="hover:font-bold"  > Newsletter</li>
+            <li  class="hover:font-bold" > LinkedIn</li>
+          </ul>
+          </li>
+        
+        </ul>
+
+        <ul class="flex flex-col justify-center items-center  block">
+          <li>
+            <a href="#" class="text-headings " >Login</a>
+          </li>
+         
+        </ul>
+        <ul  class="flex flex-col justify-center items-center mt-4  block">
+          <li>
+            <a href="#" class="py-[4px] px-[6px]  rounded-[14px]  bg-ctaHoverBg text-whiteText " >Sign Up</a>
+          </li>
+        </ul>
+
+      </div>
+
+      
+
+      
+
+      
     </div>
 
     
 
+    <div class="flex flex-col justify-between  mt-24">
+      <div class="text-whiteText text-center">
+        <h1 class="font-bold mi:text-[2.4rem] "> A modern publishing platform</h1>
+        <h2   class="opacity-[0.8] sm:mt-4">Grow your audience and build your<span class="block sm:inline">  online brand</span> </h2>
+  
+      </div>
 
-    <div class="text-whiteText text-center">
-      <h2> A modern publishing platform</h2>
-      <h3>Grow your audience and build your<span class="block sm:inline">  online brand</span> </h3>
+      <div class="text-center text-[11px] flex items-center justify-around w-full  mt-4 my-2  sm:mt-12 font-bold">
 
+        <a href="#" class=" bg-whiteText text-ctaText   text-center rounded-[14px] sm:mr-4 sm:py-[8px] sm:px-[12px] hover:bg-ctaHoverBg hover:text-whiteText  py-[1px] px-[2px] inline-block">Start for Free</a>
+
+        <a href="#" class="text-whiteText py-[2px] px-[2.5px] text-center border border-whiteText  rounded-[16px] sm:py-[6px] sm:px-2.5 hover:bg-whiteText hover:text-ctaHoverBg inline-block ml-4 ">Learn More</a>
+      </div>
     </div>
+    
 
-    <div class="">
-      <a href="#" class=" bg-whiteText text-ctaText p-1.5  text-center">Start for Free</a>
-      <a href="#" class=" text-center">Learn More</a>
-    </div>
+    
 
 
     
@@ -184,9 +287,8 @@
           <h3 class="font-bold text-[1.8rem]">Free, open, simple</h3>
 
           <p class="text-headings text-[1.5rem]">
-            Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            Blogr is a free and open source application backed by a large community of helpful developers.It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
           </p>
         </div>
         <div class="flex flex-col">
@@ -223,24 +325,28 @@
       <ul class="mb-2">
         <li class="flex flex-col items-center sm:items-start">
           <h3 class="text-whiteText  mb-1 sm:mb-2">Product</h3>
-          <ul class="text-footerText cursor-pointer flex flex-col  items-center sm:items-start text-[.85rem]">
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
+
+
+          <ul class="text-footerText cursor-pointer flex flex-col  items-center sm:items-start text-[.85rem] ">
+            <li class="hover:underline">Overview</li>
+            <li class="hover:underline">Pricing</li>
+            <li class="hover:underline">Marketplace</li>
+            <li class="hover:underline">Features</li>
+            <li class="hover:underline">Integrations</li>
           </ul>
         </li> 
       </ul>
   
-      <ul class="mb-2">
+      <ul class="mb-2 ">
         <li class="flex flex-col items-center sm:items-start">
           <h3 class="text-whiteText  mb-1 sm:mb-2">Company</h3>
-          <ul class="text-footerText cursor-pointer flex flex-col items-center sm:items-start text-[.85rem]">
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
+
+
+          <ul class="text-footerText cursor-pointer flex flex-col items-center sm:items-start text-[.85rem] ">
+            <li class="hover:underline">About</li>
+            <li class="hover:underline">Team</li>
+            <li class="hover:underline">Blog</li>
+            <li class="hover:underline">Careers</li>
           </ul>
         </li>
       </ul>
@@ -250,9 +356,9 @@
           
           <h3 class="text-whiteText mb-1 sm:mb-2">Connect</h3>
           <ul class="text-footerText cursor-pointer flex flex-col items-center sm:items-start text-[.85rem]">
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
+            <li class="hover:underline">Contact</li>
+            <li class="hover:underline">Newsletter</li>
+            <li class="hover:underline">LinkedIn</li>
           </ul>
         </li>
       </ul>  

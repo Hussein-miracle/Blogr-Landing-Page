@@ -4,18 +4,16 @@
 
 
 @layer components {
-    header{
-        border-bottom-left-radius:1rem;
-        
-    }
+    
     h3{
         color:hsl(208, 49%, 24%);
     }
+
     .lbg-1{
-        background: url("./images/bg-pattern-intro.svg"),linear-gradient(hsl(353, 100%, 62%),hsl(13, 100%, 72%));
-        background-position: 60% -90%;
-        /* background-size: 145%, 100%; */
-        background-size:cover;
+        background: url("../images/bg-pattern-intro.svg"),linear-gradient(hsl(353, 100%, 62%),hsl(13, 100%, 72%));
+        background-position: 60% , -90%;
+        background-size: 145%, 100%;
+        
         background-repeat:no-repeat;
 
         

@@ -14,6 +14,9 @@ module.exports = {
         ctaText:"hsl(356, 100%, 66%)",
         ctaHoverBg:"hsl(355, 100%, 74%)",
         headings: "hsl(208, 49%, 24%)"
+      },
+      screens:{
+        'mi': '810px',
       }
     },
   },
