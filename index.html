@@ -32,11 +32,11 @@
 
         <div class="ml-24  mi:hidden" id="mobile-menu">
 
-          <div class=" hidden  mi:hidden  -mr-12 sm:-mr-[0px]" id="menu-close__btn">
+          <div class=" hidden  mi:hidden  -mr-12 sm:-mr-[0px] transition-all" id="menu-close__btn">
             <img src="./images/icon-close.svg" alt="icon-close">
           </div>
 
-          <div id="menu-open__btn" class=" mi:hidden  -mr-12 sm:-mr-[0px]">
+          <div id="menu-open__btn" class=" mi:hidden  -mr-12 sm:-mr-[0px] transition-all">
             <img  src="./images/icon-hamburger.svg" alt="icon-hamburger">
           </div>
         </div>
@@ -107,7 +107,7 @@
         <a href="#" class=" text-ctaText bg-whiteText py-[6px] px-[8px]  rounded-[16px] ml-4 hover:bg-ctaHoverBg hover:text-whiteText " >Sign Up</a>
       </div>
 
-      <div class=" hidden absolute top-[5rem] left-[50%] -translate-x-[50%] bg-whiteText text-headings text-center w-[85%] h-[90%] rounded-[6px] z-10 flex flex-col items-center mi:hidden" id="mobile-menu__content ">
+      <div class="  absolute -top-[200%] left-[50%]  -translate-x-[50%]  bg-whiteText text-headings text-center w-[90%] sm:w-[80%] h-[155%] rounded-[6px] z-10 flex flex-col items-center mi:hidden shadow-black transition-all " id="mobile-menu__content">
 
          
         <ul class="text-whiteText w-full cursor-pointer flex flex-col items-center" id="mob-product__links--btn-container">
@@ -162,7 +162,7 @@
           </div>
           
           
-          <ul class="cursor-pointer text-headings bg-footerText   py-1 px-2 rounded-[4px]   w-[90%] mt-2 flex flex-col justify-around  " id="mob-connect__links" >
+          <ul class="hidden cursor-pointer text-headings bg-footerText   py-1 px-2 rounded-[4px]   w-[90%] mt-2 flex flex-col justify-around  " id="mob-connect__links" >
             <li class="hover:font-bold"> Contact</li>
             <li  class="hover:font-bold"  > Newsletter</li>
             <li  class="hover:font-bold" > LinkedIn</li>
@@ -179,7 +179,7 @@
         </ul>
         <ul  class="flex flex-col justify-center items-center mt-4  block">
           <li>
-            <a href="#" class="py-[4px] px-[6px]  rounded-[14px]  bg-ctaHoverBg text-whiteText " >Sign Up</a>
+            <a href="#" class="py-[4px] px-[6px]  rounded-[14px]  bg-ctaHoverBg text-whiteText " id="sign-up">Sign Up</a>
           </li>
         </ul>
 
