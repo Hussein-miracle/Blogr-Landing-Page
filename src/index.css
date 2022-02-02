@@ -9,6 +9,15 @@
         color:hsl(208, 49%, 24%);
     }
 
+    .body::-webkit-scrollbar{
+        display:none;
+        
+    }
+    .body{
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        
+    }
     .lbg-1{
         background: url("../images/bg-pattern-intro.svg"),linear-gradient(hsl(353, 100%, 62%),hsl(13, 100%, 72%));
         background-position: 60% , -90%;
